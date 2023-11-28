@@ -5,206 +5,1060 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="../src/favicon.ico" />
-    <title>Around US</title>
+    <title>Fake Expose</title>
   </head>
 
   <body>
     <div class="page">
-      <div class="page__background"></div>
-      <header class="header">
-        <img
-          ;
-          class="header__logo"
-          src="<%= require('../src/images/header__logo.svg') %>"
-          alt="header__logo"
-        />
-      </header>
+      <div class="ellipse"></div>
+      <Header class="header">
+        <h1>Fake Expose</h1>
+        <ul class="header__wrapper">
+            <li  ><a class="header__item" href="">Причины создания</a></li>
+            <li ><a class="header__item" href="">Цели</a></li>
+            <li ><a class="header__item" href="">Методы борьбы</a></li>
+            <li ><a class="header__item" href="">Успехи</a></li>
+        </ul>
+        <div class="header__button__wrapper">
+            <button class="header__button__donate">Поддержать</button>
+            <div class="header__button__language">
+              <button class="dropbtn"> <p>EN</p>  <img
+                ;
+                class="button__arrow"
+                src="<%= require('../src/images/arrow_drop_down.svg') %>"
+                alt="header__logo"
+              />
+              </button>
+              <div class="dropdown-content">
+                <a class="header__language" href="#">RU</a>
+              </div>
+        </div>
+    </Header>
       <main class="main">
-        <section class="gallery">
-          <div class="gallery__text">
-            <div class="gallery__image">
+        <div class="section__background">
+          <img
+                ;
+                class="section__image_06"
+                src="<%= require('../src/images/06.jpg') %>"
+                alt="section__image"
+              />
               <img
-                class="gallery__newImage"
-                src="<%= require('../src/images/pencil.svg') %>"
-                alt=""
-              />
+              ;
+              class="section__image_03"
+              src="<%= require('../src/images/03.jpg') %>"
+              alt="section__image"
+            />
+            <img
+            ;
+            class="section__image_05"
+            src="<%= require('../src/images/05.jpg') %>"
+            alt="section__image"
+          />
+          <img
+          ;
+          class="section__image_04"
+          src="<%= require('../src/images/04.jpg') %>"
+          alt="section__image"
+        />
+        <img
+        ;
+        class="section__image_01"
+        src="<%= require('../src/images/01.jpg') %>"
+        alt="section__image"
+      />
+      <img
+      ;
+      class="section__image_02"
+      src="<%= require('../src/images/02.jpg') %>"
+      alt="section__image"
+    />
+        </div>
+      <section class="main__text">
+        <h2 class="main__text__header">Безопасная площадка для борьбы с фейками и антисемитизмом</h2>
+
+        <p class="main__text__about">Мы создаем пространство для еврейской общины по всему миру. Наша цель - уменьшить угрозу антисемитизма, бороться с фейками и обеспечивать безопасность. <br> <br>
+          Поддержите нас в создании более справедливого и объединенного мира. Деньги пойдут на оплату серверов, зарплаты разработчикам и модераторам.</p>
+      <h3 class="main__text__reason">Причины создания Fake Expose</h3>
+      <div class="main__text__wrapper">
+        <p class="main__text__container">Организация BDS подвергает опасности студентов-евреев, продвигая антиизраильские и антисемитские идеи.</p>
+        <p class="main__text__container">Огромное количество хейт и фейк публикаций против евреев.</p>
+        <p class="main__text__container">Массовый и беспрепятственный призыв к убийству евреев без последствий.</p>
+      </div>
+      <h3 class="main__text__reason">Наши цели</h3>
+      <div class="main__text__wrapper__goals">
+        <p class="main__text__container__goals">Снижение угрозы жизни евреев.</p>
+        <p class="main__text__container__goals">Борьба с невежеством и антисемитизмом.</p>
+        <p class="main__text__container__goals">Защита евреев от случайного спонсирования антисемитизма.</p>
+      </div>
+      <h3 class="main__text__reason">Методы борьбы</h3>
+      <div class="main__wrapper">
+        <div class="main__subwrapper">
+          <p class="main__subwrapper__text">Делимся статистикой роста антисемитизма  во всём мире. Выборка по странам и видам деятельности распространителей.</p>
+          <img
+          ;
+          class="main__image_93"
+          src="<%= require('../src/images/Frame 93.svg') %>"
+          alt="section__image"
+        />
+        </div>
+        <div class="main__subbwrapper__mainWrapper">
+          <div class="main__subwrapper__faq">
+            <p class="main__subwrapper__faq__text">
+              FAQ
+            </p>
+            <p class="main__subwrapper__faq__subtext">
+              Ответы на популярные вопросы, тезисы и заблуждения.
+            </p>
+            <p class="main__subwrapper__faq__soon">
+              Скоро откроется
+            </p>
+          </div>
+          <div class="main__subwrapper__textblops">
+            <div class="main__subwrapper__textblops__wrappers__first"> <p class="main__subwrapper__faq__subtext main__subwrapper_long">
+              Защита евреев и их семей от близкого контакта с опасными антисемитами.
+            </p></div>
+            <div class="main__subwrapper__textblops__wrappers"> <p class="main__subwrapper__faq__subtext">
+              База данных антисемитов для борьбы с хейт-постами по всему миру.
+            </p></div>
+            <div class="main__subwrapper__textblops__wrappers"> <p class="main__subwrapper__faq__subtext">
+              Сохранение репутации евреев от случайного спонсирования антисемитизма.
+            </p></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="carousel__wrapper">
+
+        <div class="carousel__header__wrapper">
+          <h3 class="main__text__reason">Публичный инструмент борьбы <br> с фейками</h3>
+        </div>
+        <div class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img
+              ;
+              class="main__image"
+              src="<%= require('../src/images/main.jpg') %>"
+              alt="section__image"
+            />
             </div>
-
-            <div class="gallery__wrapper gallery__eclipsis">
-              <div class="gallery__column">
-                <h1 class="gallery__header">Jacques Cousteau</h1>
-                <button class="gallery__pencil" type="button"></button>
-              </div>
-              <p class="gallery__subtext">Explorer</p>
+            <div class="carousel-item">
+              <img
+              ;
+              class="main__image"
+              src="<%= require('../src/images/main_2.jpg') %>"
+              alt="section__image"
+            />
             </div>
-            <button class="gallery__button" type="button">
-              <img src="<%= require('../src/images/plus.svg') %>" alt="plus" />
-            </button>
+            <div class="carousel-item">
+              <img
+              ;
+              class="main__image"
+              src="<%= require('../src/images/main_3.jpg') %>"
+              alt="section__image"
+            />
+            </div>
           </div>
-        </section>
-        <section class="card">
-          <ul class="card__area"></ul>
-          <template id="card-template">
-            <li class="card__gallery">
-              <div class="card__wrapper">
-                <button
-                  type="button"
-                  id="deleteButton"
-                  class="card__delete-button"
-                ></button>
-                <img id="myImage" class="card__image" src="none" />
-              </div>
-              <div class="card__text">
-                <h2 class="card__ellipsis"></h2>
-                <button
-                  id="heart"
-                  class="card__button card__background"
-                ></button>
-              </div>
-              <span class="card__likes"></span>
-            </li>
-          </template>
-        </section>
-        <div class="popup popup_type_edit-profile">
-          <button class="popup__close"></button>
-          <div class="popup__content">
-            <h3 class="popup__title">Edit profile</h3>
-            <form name="profile" id="form__edit" class="popup__form">
-              <input
-                id="input_type_name"
-                type="text"
-                name="name"
-                required
-                minlength="2"
-                maxlength="40"
-                class="popup__input popup__input_type_name"
-                placeholder="Name"
-              />
-              <label
-                id="input_type_name-error"
-                for="name"
-                class="popup__label"
-              ></label>
-              <input
-                id="input_type_description"
-                type="text"
-                name="title"
-                required
-                minlength="2"
-                maxlength="200"
-                class="popup__input popup__input_type_description"
-                placeholder="About"
-              />
-              <label
-                id="input_type_description-error"
-                for="title"
-                class="popup__label"
-              ></label>
-              <button
-                id="button_edit_profile"
-                type="submit"
-                class="button popup__button"
-              >
-                Save
-              </button>
-            </form>
+          <div class="button-container">
+            <button id="button1" class="custom-button active"></button>
+            <button id="button2" class="custom-button"></button>
+            <button id="button3" class="custom-button"></button>
           </div>
         </div>
+        <button class="carousel__button__testing">
+          Записаться на тестирование</button>
+      </div>
+      
+      <script>
+ const carousel = document.querySelector('.carousel-inner');
+  const buttons = document.querySelectorAll('.custom-button');
 
-        <div class="popup popup_type_add-card">
-          <button class="popup__close" id="closeButtonNewPlace"></button>
-          <div class="popup__content">
-            <h3 class="popup__title">New place</h3>
-            <form name="card" id="form__place" class="popup__form">
-              <input
-                type="text"
-                id="type_card-name"
-                required
-                name="nameNew"
-                minlength="1"
-                maxlength="30"
-                class="popup__input popup__input_type_card-name"
-                placeholder="Title"
-              />
-              <label
-                id="type_card-name-error"
-                for="nameNew"
-                class="popup__label"
-              ></label>
-              <input
-                type="url"
-                id="type_card-url"
-                required
-                name="titleURL"
-                class="popup__input popup__input_type_card-link"
-                placeholder="Image link"
-              />
-              <label
-                id="type_card-url-error"
-                for="titleURL"
-                class="popup__label"
-              ></label>
-              <button
-                id="button_add_card"
-                type="submit"
-                class="button popup__button"
-                action=""
-              >
-                Create
-              </button>
-            </form>
-          </div>
-        </div>
-        <div class="popup popup_type_foto">
-          <button class="popup__close" id="closeButtonFoto"></button>
-          <div class="popup__content">
-            <h3 class="popup__title-foto">Lago di Braies</h3>
-          </div>
-        </div>
+  function showSlide(index) {
+    carousel.style.transform = `translateX(${-index * 100}%)`;
+  }
 
-        <div class="popup popup_type_delete">
-          <div class="popup__content">
-            <h3 class="popup__title">Are you sure?</h3>
-            <button class="popup__close"></button>
-            <form action="" class="popup__form">
-              <button type="submit" class="button popup__button">Yes</button>
-            </form>
-          </div>
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      showSlide(index);
+      // Remove the 'active' class from all buttons
+      buttons.forEach(btn => btn.classList.remove('active'));
+      // Add the 'active' class to the clicked button
+      button.classList.add('active');
+    });
+  });
+      </script> 
+      <h3 class="main__text__reason header_success">Успехи</h3>
+      <div class="main__success__wrapper">
+        <img
+        ;
+        class="main__check"
+        src="<%= require('../src/images/check.svg') %>"
+        alt="section__image"
+      />
+      <p class="main__success__text">Разработали прототип инструмента борьбы с фейками.</p>
+      </div>
+      <div class="main__success__wrapper">
+        <img
+        ;
+        class="main__check"
+        src="<%= require('../src/images/check.svg') %>"
+        alt="section__image"
+      />
+      <p class="main__success__text">Заручились поддержкой крупных инвесторов <br> и администраций.</p>
+      </div>
+      <div class="last__success__wrapper">
+        <img
+        ;
+        class="last__check"
+        src="<%= require('../src/images/payments.svg') %>"
+        alt="section__image"
+      />
+      <p class="last__success__text">Собираем средства для разработки полномасштабного <br> проекта.</p>
+      </div>
+      <div class="main__last__wrapper">
+        <p class="main__last__wrapper__text">Планируем…</p>
+        <p class="main__last__wrapper__text">А ещё хотим…</p>
+      </div>
+    
+      <h3 class="main__text__reason ">Поддержать Fake Expose</h3>
+      <div class="main__donate__wrapper">
+      <div class="main__donate__paypal__wrapper">
+        <img
+        ;
+        class="main__donate__paypal__image"
+        src="<%= require('../src/images/paypal.svg') %>"
+        alt="paypal__image"
+      />
+      <p class="main__donate__paypal__text">Paypal</p>
+      <input class="main__donate__input" minlength="2"
+      maxlength="6" type="number" placeholder="Введите сумму">
+      <button class="main__button__donate">Поддержать</button>
+      </div>
+      <div class="main__donate__coins__wrapper">
+        <div class="main__donate__coin__wrapper">
+          <img
+          ;
+          class="main__donate__coin__image"
+          src="<%= require('../src/images/bitcoin.svg') %>"
+          alt="paypal__image"
+        />
+        <div class="main__coin__text">
+          <p class="main__coin__title">Bitcoin</p>
+          <p class="main__coin__address">1Np1n7mGgdjjtbwuMNVjpc98jUo6EdS3FH</p>
         </div>
-
-        <div class="popup popup_type_avatar">
-          <div class="popup__content">
-            <h3 class="popup__title">Change profile picture</h3>
-
-            <button class="popup__close"></button>
-            <form name="avatar" class="popup__form" id="form__avatar">
-              <input
-                type="url"
-                id="type_avatar-url"
-                required
-                name="avatar"
-                class="popup__input popup__input_type_avatar-link"
-                placeholder="Avatars Image link"
-              />
-              <label
-                id="type_avatar-url-error"
-                for="avatar"
-                class="popup__label"
-              ></label>
-              <button
-                type="submit"
-                id="avatar_button"
-                class="button popup__button"
-                action=""
-              >
-                Save
-              </button>
-            </form>
-          </div>
+        <div class="main__coin__buttons__wrapper">
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/content_copy.svg') %>"
+            alt="copy__image"
+          />
+          </button>
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/qr_code.svg') %>"
+            alt="qr__image"
+          />
+          </button>
         </div>
+        </div>
+        <div class="main__donate__coin__wrapper">
+          <img
+          ;
+          class="main__donate__coin__image"
+          src="<%= require('../src/images/Crypto icons.svg') %>"
+          alt="paypal__image"
+        />
+        <div class="main__coin__text">
+          <p class="main__coin__title">Ethereum</p>
+          <p class="main__coin__address">0xAe57ae6F95FC9C10ACa733523a4de85e22C278aA</p>
+        </div>
+        <div class="main__coin__buttons__wrapper">
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/content_copy.svg') %>"
+            alt="copy__image"
+          />
+          </button>
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/qr_code.svg') %>"
+            alt="qr__image"
+          />
+          </button>
+        </div>
+        </div>
+        <div class="main__donate__coin__wrapper">
+          <img
+          ;
+          class="main__donate__coin__image"
+          src="<%= require('../src/images/Crypto icons (1).svg') %>"
+          alt="paypal__image"
+        />
+        <div class="main__coin__text">
+          <p class="main__coin__title">Tether USDT (ERC-20)</p>
+          <p class="main__coin__address">1Np1n7mGgdjjtbwuMNVjpc98jUo6EdS3FH</p>
+        </div>
+        <div class="main__coin__buttons__wrapper">
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/content_copy.svg') %>"
+            alt="copy__image"
+          />
+          </button>
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/qr_code.svg') %>"
+            alt="qr__image"
+          />
+          </button>
+        </div>
+        </div>
+        <div class="main__donate__coin__wrapper">
+          <img
+          ;
+          class="main__donate__coin__image"
+          src="<%= require('../src/images/Crypto icons (2).svg') %>"
+          alt="paypal__image"
+        />
+        <div class="main__coin__text">
+          <p class="main__coin__title">Tron</p>
+          <p class="main__coin__address">1Np1n7mGgdjjtbwuMNVjpc98jUo6EdS3FH</p>
+        </div>
+        <div class="main__coin__buttons__wrapper">
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/content_copy.svg') %>"
+            alt="copy__image"
+          />
+          </button>
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/qr_code.svg') %>"
+            alt="qr__image"
+          />
+          </button>
+        </div>
+        </div>
+        <div class="main__donate__coin__wrapper">
+          <img
+          ;
+          class="main__donate__coin__image"
+          src="<%= require('../src/images/Crypto icons (3).svg') %>"
+          alt="paypal__image"
+        />
+        <div class="main__coin__text">
+          <p class="main__coin__title">Tether USDT (TRC-20)</p>
+          <p class="main__coin__address">TNZi1rFtF9uXG79etv9aS28o3yNoD1vthP</p>
+        </div>
+        <div class="main__coin__buttons__wrapper">
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/content_copy.svg') %>"
+            alt="copy__image"
+          />
+          </button>
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/qr_code.svg') %>"
+            alt="qr__image"
+          />
+          </button>
+        </div>
+        </div>
+      </div>
+    </div>
+    </section>
       </main>
       <footer class="footer">
-        <p class="footer__copyright">© 2022 Around The U.S.</p>
+        <div class="footer__subwrapper">
+        <h4 class="footer__title">Помочь  руками</h4>
+        <div class="footer__wrapper">
+          <div class="footer__form__wrapper">
+          <form action="">
+            <div class="footer__buttons__wrapper">
+              <button id="volunteer" class="footer__button__option active__button">Волонтёр</button>
+              <button  id="moderator" class="footer__button__option">Модератор</button>
+            </div>
+            <div class="footer__inputs__wrapper">
+              <input
+              id="input_type_email"
+              type="email"
+              name="email"
+              minlength="2"
+              maxlength="40"
+              class="main__donate__input"
+              placeholder="Электронная почта"
+            />
+            <button
+            type="submit"
+            class="main__donat__submitButton"
+          >
+            Записаться
+          </button>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+          <script>
+              const emailInput = document.getElementById("input_type_email");
+emailInput.addEventListener("input", function() {
+  this.value = this.value.trim().toLowerCase();
+  console.log(this.value)
+});
+
+            document.getElementById("volunteer").addEventListener("click", function(e) {
+              e.preventDefault();
+              document.getElementById("moderator").classList.remove("active__button");
+              this.classList.add("active__button");
+            });
+            document.getElementById("moderator").addEventListener("click", function(e) {
+              e.preventDefault();
+              document.getElementById("volunteer").classList.remove("active__button");
+              this.classList.add("active__button");
+            });
+          </script>
+        
+          <div class="footer__subwrapper">
+
+          
+        <h4 class="footer__title">Рассказать в соцсетях</h4>
+        <div class="footer__form__wrapper short">
+          <div class="footer__icons__subwrapper">
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/insta.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/fb.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/twitter.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/tictok.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/linkedin.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+          </div>
+          <div class="footer__icons__subwrapper">
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/tg.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/whats.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/vk.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/classmates.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/content_copy.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+          </div>
+
+        </div>
+      </div>
+      </div>
+      </footer>
+    </div>
+    <div class="page__mobile">
+      <div class="ellipse"></div>
+      <Header class="header">
+        
+        <ul class="header__wrapper">
+            <li  ><a class="header__item" href="">Причины создания</a></li>
+            <li ><a class="header__item" href="">Цели</a></li>
+            <li ><a class="header__item" href="">Методы борьбы</a></li>
+            <li ><a class="header__item" href="">Успехи</a></li>
+        </ul>
+        <div class="header__button__wrapper">
+          <h1>Fake Expose</h1>
+            <button class="header__button__donate">Поддержать</button>
+            
+            <div class="header__button__language">
+              <button class="dropbtn"> <p>EN</p>  <img
+                ;
+                class="button__arrow"
+                src="<%= require('../src/images/arrow_drop_down.svg') %>"
+                alt="header__logo"
+              />
+              </button>
+              <div class="dropdown-content">
+                <a class="header__language" href="#">RU</a>
+              </div>
+        </div>
+    </Header>
+      <main class="main">
+        <div class="section__background">
+          <img
+                ;
+                class="section__image_06"
+                src="<%= require('../src/images/06.jpg') %>"
+                alt="section__image"
+              />
+              <img
+              ;
+              class="section__image_03"
+              src="<%= require('../src/images/03.jpg') %>"
+              alt="section__image"
+            />
+            <img
+            ;
+            class="section__image_05"
+            src="<%= require('../src/images/05.jpg') %>"
+            alt="section__image"
+          />
+          <img
+          ;
+          class="section__image_04"
+          src="<%= require('../src/images/04.jpg') %>"
+          alt="section__image"
+        />
+        <img
+        ;
+        class="section__image_01"
+        src="<%= require('../src/images/01.jpg') %>"
+        alt="section__image"
+      />
+      <img
+      ;
+      class="section__image_02"
+      src="<%= require('../src/images/02.jpg') %>"
+      alt="section__image"
+    />
+        </div>
+      <section class="main__text">
+        <h2 class="main__text__header">Безопасная площадка для борьбы с фейками и антисемитизмом</h2>
+
+        <p class="main__text__about">Мы создаем пространство для еврейской общины по всему миру. Наша цель - уменьшить угрозу антисемитизма, бороться с фейками и обеспечивать безопасность. <br> <br>
+          Поддержите нас в создании более справедливого и объединенного мира. Деньги пойдут на оплату серверов, зарплаты разработчикам и модераторам.</p>
+      <h3 class="main__text__reason">Причины создания Fake Expose</h3>
+      <div class="main__text__wrapper">
+        <p class="main__text__container">Организация BDS подвергает опасности студентов-евреев, продвигая антиизраильские и антисемитские идеи.</p>
+        <p class="main__text__container">Огромное количество хейт и фейк публикаций против евреев.</p>
+        <p class="main__text__container">Массовый и беспрепятственный призыв к убийству евреев без последствий.</p>
+      </div>
+      <h3 class="main__text__reason">Наши цели</h3>
+      <div class="main__text__wrapper__goals">
+        <p class="main__text__container__goals">Снижение угрозы жизни евреев.</p>
+        <p class="main__text__container__goals">Борьба с невежеством и антисемитизмом.</p>
+        <p class="main__text__container__goals">Защита евреев от случайного спонсирования антисемитизма.</p>
+      </div>
+      <h3 class="main__text__reason">Методы борьбы</h3>
+      <div class="main__wrapper">
+        <div class="main__subwrapper">
+          <p class="main__subwrapper__text">Делимся статистикой роста антисемитизма  во всём мире. Выборка по странам и видам деятельности распространителей.</p>
+          <img
+          ;
+          class="main__image_93"
+          src="<%= require('../src/images/Frame 93.svg') %>"
+          alt="section__image"
+        />
+        </div>
+        <div class="main__subbwrapper__mainWrapper">
+          <div class="main__subwrapper__faq">
+            <p class="main__subwrapper__faq__text">
+              FAQ
+            </p>
+            <p class="main__subwrapper__faq__subtext">
+              Ответы на популярные вопросы, тезисы и заблуждения.
+            </p>
+            <p class="main__subwrapper__faq__soon">
+              Скоро откроется
+            </p>
+          </div>
+          <div class="main__subwrapper__textblops">
+            <div class="main__subwrapper__textblops__wrappers__first"> <p class="main__subwrapper__faq__subtext ">
+              Защита евреев и их семей от близкого контакта с опасными антисемитами.
+            </p></div>
+            <div class="main__subwrapper__textblops__wrappers"> <p class="main__subwrapper__faq__subtext">
+              База данных антисемитов для борьбы с хейт-постами по всему миру.
+            </p></div>
+            <div class="main__subwrapper__textblops__wrappers"> <p class="main__subwrapper__faq__subtext">
+              Сохранение репутации евреев от случайного спонсирования антисемитизма.
+            </p></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="carousel__wrapper">
+
+        <div class="carousel__header__wrapper">
+          <h3 class="main__text__reason">Публичный инструмент борьбы <br> с фейками</h3>
+        </div>
+        <div class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img
+              ;
+              class="main__image"
+              src="<%= require('../src/images/main.jpg') %>"
+              alt="section__image"
+            />
+            </div>
+            <div class="carousel-item">
+              <img
+              ;
+              class="main__image"
+              src="<%= require('../src/images/main_2.jpg') %>"
+              alt="section__image"
+            />
+            </div>
+            <div class="carousel-item">
+              <img
+              ;
+              class="main__image"
+              src="<%= require('../src/images/main_3.jpg') %>"
+              alt="section__image"
+            />
+            </div>
+          </div>
+          <div class="button-container">
+            <button id="button1" class="custom-button active"></button>
+            <button id="button2" class="custom-button"></button>
+            <button id="button3" class="custom-button"></button>
+          </div>
+        </div>
+        <button class="carousel__button__testing">
+          Записаться на тестирование</button>
+      </div>
+      
+      <script>
+ const carousel = document.querySelector('.carousel-inner');
+  const buttons = document.querySelectorAll('.custom-button');
+
+  function showSlide(index) {
+    carousel.style.transform = `translateX(${-index * 100}%)`;
+  }
+
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      showSlide(index);
+      // Remove the 'active' class from all buttons
+      buttons.forEach(btn => btn.classList.remove('active'));
+      // Add the 'active' class to the clicked button
+      button.classList.add('active');
+    });
+  });
+      </script> 
+      <h3 class="main__text__reason header_success">Успехи</h3>
+      <div class="main__success__wrapper">
+        <img
+        ;
+        class="main__check"
+        src="<%= require('../src/images/check.svg') %>"
+        alt="section__image"
+      />
+      <p class="main__success__text">Разработали прототип инструмента борьбы с фейками.</p>
+      </div>
+      <div class="main__success__wrapper">
+        <img
+        ;
+        class="main__check"
+        src="<%= require('../src/images/check.svg') %>"
+        alt="section__image"
+      />
+      <p class="main__success__text">Заручились поддержкой крупных инвесторов <br> и администраций.</p>
+      </div>
+      <div class="last__success__wrapper">
+        <img
+        ;
+        class="last__check"
+        src="<%= require('../src/images/payments.svg') %>"
+        alt="section__image"
+      />
+      <p class="last__success__text">Собираем средства для разработки полномасштабного <br> проекта.</p>
+      </div>
+      <div class="main__last__wrapper">
+        <p class="main__last__wrapper__text">Планируем…</p>
+        <p class="main__last__wrapper__text">А ещё хотим…</p>
+      </div>
+    
+      <h3 class="main__text__reason ">Поддержать Fake Expose</h3>
+      <div class="main__donate__wrapper">
+      <div class="main__donate__paypal__wrapper">
+        <img
+        ;
+        class="main__donate__paypal__image"
+        src="<%= require('../src/images/paypal.svg') %>"
+        alt="paypal__image"
+      />
+      <p class="main__donate__paypal__text">Paypal</p>
+      <input class="main__donate__input" minlength="2"
+      maxlength="6" type="number" placeholder="Введите сумму">
+      <button class="main__button__donate">Поддержать</button>
+      </div>
+      <div class="main__donate__coins__wrapper">
+        <div class="main__donate__coin__wrapper">
+          <img
+          ;
+          class="main__donate__coin__image"
+          src="<%= require('../src/images/bitcoin.svg') %>"
+          alt="paypal__image"
+        />
+        <div class="main__coin__text">
+          <p class="main__coin__title">Bitcoin</p>
+          <p class="main__coin__address">1Np1n7mGgdjjtbwuMNVjpc98jUo6EdS3FH</p>
+        </div>
+        <div class="main__coin__buttons__wrapper">
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/content_copy.svg') %>"
+            alt="copy__image"
+          />
+          </button>
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/qr_code.svg') %>"
+            alt="qr__image"
+          />
+          </button>
+        </div>
+        </div>
+        <div class="main__donate__coin__wrapper">
+          <img
+          ;
+          class="main__donate__coin__image"
+          src="<%= require('../src/images/Crypto icons.svg') %>"
+          alt="paypal__image"
+        />
+        <div class="main__coin__text">
+          <p class="main__coin__title">Ethereum</p>
+          <p class="main__coin__address">0xAe57ae6F95FC9C10ACa733523a4de85e22C278aA</p>
+        </div>
+        <div class="main__coin__buttons__wrapper">
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/content_copy.svg') %>"
+            alt="copy__image"
+          />
+          </button>
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/qr_code.svg') %>"
+            alt="qr__image"
+          />
+          </button>
+        </div>
+        </div>
+        <div class="main__donate__coin__wrapper">
+          <img
+          ;
+          class="main__donate__coin__image"
+          src="<%= require('../src/images/Crypto icons (1).svg') %>"
+          alt="paypal__image"
+        />
+        <div class="main__coin__text">
+          <p class="main__coin__title">Tether USDT (ERC-20)</p>
+          <p class="main__coin__address">1Np1n7mGgdjjtbwuMNVjpc98jUo6EdS3FH</p>
+        </div>
+        <div class="main__coin__buttons__wrapper">
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/content_copy.svg') %>"
+            alt="copy__image"
+          />
+          </button>
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/qr_code.svg') %>"
+            alt="qr__image"
+          />
+          </button>
+        </div>
+        </div>
+        <div class="main__donate__coin__wrapper">
+          <img
+          ;
+          class="main__donate__coin__image"
+          src="<%= require('../src/images/Crypto icons (2).svg') %>"
+          alt="paypal__image"
+        />
+        <div class="main__coin__text">
+          <p class="main__coin__title">Tron</p>
+          <p class="main__coin__address">1Np1n7mGgdjjtbwuMNVjpc98jUo6EdS3FH</p>
+        </div>
+        <div class="main__coin__buttons__wrapper">
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/content_copy.svg') %>"
+            alt="copy__image"
+          />
+          </button>
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/qr_code.svg') %>"
+            alt="qr__image"
+          />
+          </button>
+        </div>
+        </div>
+        <div class="main__donate__coin__wrapper">
+          <img
+          ;
+          class="main__donate__coin__image"
+          src="<%= require('../src/images/Crypto icons (3).svg') %>"
+          alt="paypal__image"
+        />
+        <div class="main__coin__text">
+          <p class="main__coin__title">Tether USDT (TRC-20)</p>
+          <p class="main__coin__address">TNZi1rFtF9uXG79etv9aS28o3yNoD1vthP</p>
+        </div>
+        <div class="main__coin__buttons__wrapper">
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/content_copy.svg') %>"
+            alt="copy__image"
+          />
+          </button>
+          <button class="icon__button">
+            <img
+            ;
+            class="main__donate__coin__icon"
+            src="<%= require('../src/images/qr_code.svg') %>"
+            alt="qr__image"
+          />
+          </button>
+        </div>
+        </div>
+      </div>
+    </div>
+    </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__subwrapper">
+        <h4 class="footer__title">Помочь  руками</h4>
+        <div class="footer__wrapper">
+          <div class="footer__form__wrapper">
+          <form action="">
+            <div class="footer__buttons__wrapper">
+              <button id="volunteer" class="footer__button__option active__button">Волонтёр</button>
+              <button  id="moderator" class="footer__button__option">Модератор</button>
+            </div>
+            <div class="footer__inputs__wrapper">
+              <input
+              id="input_type_email"
+              type="email"
+              name="email"
+              minlength="2"
+              maxlength="40"
+              class="main__donate__input"
+              placeholder="Электронная почта"
+            />
+            <button
+            type="submit"
+            class="main__donat__submitButton"
+          >
+            Записаться
+          </button>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+          <script>
+              const emailInput = document.getElementById("input_type_email");
+emailInput.addEventListener("input", function() {
+  this.value = this.value.trim().toLowerCase();
+  console.log(this.value)
+});
+
+            document.getElementById("volunteer").addEventListener("click", function(e) {
+              e.preventDefault();
+              document.getElementById("moderator").classList.remove("active__button");
+              this.classList.add("active__button");
+            });
+            document.getElementById("moderator").addEventListener("click", function(e) {
+              e.preventDefault();
+              document.getElementById("volunteer").classList.remove("active__button");
+              this.classList.add("active__button");
+            });
+          </script>
+        
+          <div class="footer__subwrapper">
+
+          
+        <h4 class="footer__title">Рассказать в соцсетях</h4>
+        <div class="footer__form__wrapper short">
+          <div class="footer__icons__subwrapper">
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/insta.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/fb.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/twitter.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/tictok.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/linkedin.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+          </div>
+          <div class="footer__icons__subwrapper">
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/tg.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/whats.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/vk.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/classmates.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+            <button class="footer__button__wrapper">
+              <img
+              ;
+              class="main__social__icon"
+              src="<%= require('../src/images/content_copy.svg') %>"
+              alt="copy__image"
+            />
+            </button>
+          </div>
+
+        </div>
+      </div>
+      </div>
       </footer>
     </div>
   </body>
