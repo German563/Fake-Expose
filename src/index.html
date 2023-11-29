@@ -14,10 +14,10 @@
       <Header class="header">
         <h1>Fake Expose</h1>
         <ul class="header__wrapper">
-            <li  ><a class="header__item" href="">Причины создания</a></li>
-            <li ><a class="header__item" href="">Цели</a></li>
-            <li ><a class="header__item" href="">Методы борьбы</a></li>
-            <li ><a class="header__item" href="">Успехи</a></li>
+            <li  ><a class="header__item" href="#reasons">Причины создания</a></li>
+            <li ><a class="header__item" href="#goals">Цели</a></li>
+            <li ><a class="header__item" href="#instruments">Методы борьбы</a></li>
+            <li ><a class="header__item" href="#success">Успехи</a></li>
         </ul>
         <div class="header__button__wrapper">
             <button class="header__button__donate">Поддержать</button>
@@ -78,19 +78,19 @@
 
         <p class="main__text__about">Мы создаем пространство для еврейской общины по всему миру. Наша цель - уменьшить угрозу антисемитизма, бороться с фейками и обеспечивать безопасность. <br> <br>
           Поддержите нас в создании более справедливого и объединенного мира. Деньги пойдут на оплату серверов, зарплаты разработчикам и модераторам.</p>
-      <h3 class="main__text__reason">Причины создания Fake Expose</h3>
+      <h3 class="main__text__reason" id="reasons">Причины создания Fake Expose</h3>
       <div class="main__text__wrapper">
         <p class="main__text__container">Организация BDS подвергает опасности студентов-евреев, продвигая антиизраильские и антисемитские идеи.</p>
         <p class="main__text__container">Огромное количество хейт и фейк публикаций против евреев.</p>
         <p class="main__text__container">Массовый и беспрепятственный призыв к убийству евреев без последствий.</p>
       </div>
-      <h3 class="main__text__reason">Наши цели</h3>
+      <h3 class="main__text__reason" id="goals">Наши цели</h3>
       <div class="main__text__wrapper__goals">
         <p class="main__text__container__goals">Снижение угрозы жизни евреев.</p>
         <p class="main__text__container__goals">Борьба с невежеством и антисемитизмом.</p>
         <p class="main__text__container__goals">Защита евреев от случайного спонсирования антисемитизма.</p>
       </div>
-      <h3 class="main__text__reason">Методы борьбы</h3>
+      <h3 class="main__text__reason" id="instruments">Методы борьбы</h3>
       <div class="main__wrapper">
         <div class="main__subwrapper">
           <p class="main__subwrapper__text">Делимся статистикой роста антисемитизма  во всём мире. Выборка по странам и видам деятельности распространителей.</p>
@@ -103,9 +103,12 @@
         </div>
         <div class="main__subbwrapper__mainWrapper">
           <div class="main__subwrapper__faq">
-            <p class="main__subwrapper__faq__text">
-              FAQ
-            </p>
+              <img
+              ;
+              class="main__subwrapper__faq__text"
+              src="<%= require('../src/images/FAQ (Stroke).svg') %>"
+              alt="section__image"
+            />
             <p class="main__subwrapper__faq__subtext">
               Ответы на популярные вопросы, тезисы и заблуждения.
             </p>
@@ -169,25 +172,7 @@
           Записаться на тестирование</button>
       </div>
       
-      <script>
- const carousel = document.querySelector('.carousel-inner');
-  const buttons = document.querySelectorAll('.custom-button');
-
-  function showSlide(index) {
-    carousel.style.transform = `translateX(${-index * 100}%)`;
-  }
-
-  buttons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      showSlide(index);
-      // Remove the 'active' class from all buttons
-      buttons.forEach(btn => btn.classList.remove('active'));
-      // Add the 'active' class to the clicked button
-      button.classList.add('active');
-    });
-  });
-      </script> 
-      <h3 class="main__text__reason header_success">Успехи</h3>
+      <h3 class="main__text__reason header_success" id="success">Успехи</h3>
       <div class="main__success__wrapper">
         <img
         ;
@@ -222,18 +207,22 @@
     
       <h3 class="main__text__reason ">Поддержать Fake Expose</h3>
       <div class="main__donate__wrapper">
-      <div class="main__donate__paypal__wrapper">
-        <img
-        ;
-        class="main__donate__paypal__image"
-        src="<%= require('../src/images/paypal.svg') %>"
-        alt="paypal__image"
-      />
-      <p class="main__donate__paypal__text">Paypal</p>
-      <input class="main__donate__input" minlength="2"
-      maxlength="6" type="number" placeholder="Введите сумму">
-      <button class="main__button__donate">Поддержать</button>
-      </div>
+        <div class="main__donate__paypal__wrapper">
+          <img class="main__donate__paypal__image" src="<%= require('../src/images/paypal.svg') %>" alt="paypal__image">
+            <p class="main__donate__paypal__text">Paypal</p>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations">
+            <input type="hidden" name="business" value="asif.yagudaev@gmail.com">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="item_name" value="Support Project Fake Expose">
+            <input type="hidden" name="no_note" value="0">
+            
+            
+            
+            <input class="main__donate__input" minlength="2" maxlength="6" type="number" name="amount" placeholder="Введите сумму">
+            <button class="main__button__donate" type="submit">Поддержать</button>
+          </form>
+        </div>
       <div class="main__donate__coins__wrapper">
         <div class="main__donate__coin__wrapper">
           <img
@@ -420,24 +409,6 @@
           </div>
         </div>
       </div>
-          <script>
-              const emailInput = document.getElementById("input_type_email");
-emailInput.addEventListener("input", function() {
-  this.value = this.value.trim().toLowerCase();
-  console.log(this.value)
-});
-
-            document.getElementById("volunteer").addEventListener("click", function(e) {
-              e.preventDefault();
-              document.getElementById("moderator").classList.remove("active__button");
-              this.classList.add("active__button");
-            });
-            document.getElementById("moderator").addEventListener("click", function(e) {
-              e.preventDefault();
-              document.getElementById("volunteer").classList.remove("active__button");
-              this.classList.add("active__button");
-            });
-          </script>
         
           <div class="footer__subwrapper">
 
@@ -539,10 +510,10 @@ emailInput.addEventListener("input", function() {
       <Header class="header">
         
         <ul class="header__wrapper">
-            <li  ><a class="header__item" href="">Причины создания</a></li>
-            <li ><a class="header__item" href="">Цели</a></li>
-            <li ><a class="header__item" href="">Методы борьбы</a></li>
-            <li ><a class="header__item" href="">Успехи</a></li>
+          <li  ><a class="header__item" href="#reasons_mob">Причины создания</a></li>
+          <li ><a class="header__item" href="#goals_mob">Цели</a></li>
+          <li ><a class="header__item" href="#instruments_mob">Методы борьбы</a></li>
+          <li ><a class="header__item" href="#success_mob">Успехи</a></li>
         </ul>
         <div class="header__button__wrapper">
           <h1>Fake Expose</h1>
@@ -605,19 +576,19 @@ emailInput.addEventListener("input", function() {
 
         <p class="main__text__about">Мы создаем пространство для еврейской общины по всему миру. Наша цель - уменьшить угрозу антисемитизма, бороться с фейками и обеспечивать безопасность. <br> <br>
           Поддержите нас в создании более справедливого и объединенного мира. Деньги пойдут на оплату серверов, зарплаты разработчикам и модераторам.</p>
-      <h3 class="main__text__reason">Причины создания Fake Expose</h3>
+      <h3 class="main__text__reason" id="reasons_mob">Причины создания Fake Expose</h3>
       <div class="main__text__wrapper">
         <p class="main__text__container">Организация BDS подвергает опасности студентов-евреев, продвигая антиизраильские и антисемитские идеи.</p>
         <p class="main__text__container">Огромное количество хейт и фейк публикаций против евреев.</p>
         <p class="main__text__container">Массовый и беспрепятственный призыв к убийству евреев без последствий.</p>
       </div>
-      <h3 class="main__text__reason">Наши цели</h3>
+      <h3 class="main__text__reason" id="goals_mob">Наши цели</h3>
       <div class="main__text__wrapper__goals">
         <p class="main__text__container__goals">Снижение угрозы жизни евреев.</p>
         <p class="main__text__container__goals">Борьба с невежеством и антисемитизмом.</p>
         <p class="main__text__container__goals">Защита евреев от случайного спонсирования антисемитизма.</p>
       </div>
-      <h3 class="main__text__reason">Методы борьбы</h3>
+      <h3 class="main__text__reason" id="instruments_mob">Методы борьбы</h3>
       <div class="main__wrapper">
         <div class="main__subwrapper">
           <p class="main__subwrapper__text">Делимся статистикой роста антисемитизма  во всём мире. Выборка по странам и видам деятельности распространителей.</p>
@@ -630,9 +601,12 @@ emailInput.addEventListener("input", function() {
         </div>
         <div class="main__subbwrapper__mainWrapper">
           <div class="main__subwrapper__faq">
-            <p class="main__subwrapper__faq__text">
-              FAQ
-            </p>
+            <img
+            ;
+            class="main__subwrapper__faq__text"
+            src="<%= require('../src/images/FAQ (Stroke).svg') %>"
+            alt="section__image"
+          />
             <p class="main__subwrapper__faq__subtext">
               Ответы на популярные вопросы, тезисы и заблуждения.
             </p>
@@ -660,7 +634,7 @@ emailInput.addEventListener("input", function() {
           <h3 class="main__text__reason">Публичный инструмент борьбы <br> с фейками</h3>
         </div>
         <div class="carousel">
-          <div class="carousel-inner">
+          <div class="carousel-inner carousel-inner-mobile">
             <div class="carousel-item">
               <img
               ;
@@ -687,34 +661,16 @@ emailInput.addEventListener("input", function() {
             </div>
           </div>
           <div class="button-container">
-            <button id="button1" class="custom-button active"></button>
-            <button id="button2" class="custom-button"></button>
-            <button id="button3" class="custom-button"></button>
+            <button id="button1" class="custom-button-mobile active"></button>
+            <button id="button2" class="custom-button-mobile"></button>
+            <button id="button3" class="custom-button-mobile"></button>
           </div>
         </div>
         <button class="carousel__button__testing">
           Записаться на тестирование</button>
       </div>
       
-      <script>
- const carousel = document.querySelector('.carousel-inner');
-  const buttons = document.querySelectorAll('.custom-button');
-
-  function showSlide(index) {
-    carousel.style.transform = `translateX(${-index * 100}%)`;
-  }
-
-  buttons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      showSlide(index);
-      // Remove the 'active' class from all buttons
-      buttons.forEach(btn => btn.classList.remove('active'));
-      // Add the 'active' class to the clicked button
-      button.classList.add('active');
-    });
-  });
-      </script> 
-      <h3 class="main__text__reason header_success">Успехи</h3>
+      <h3 class="main__text__reason header_success" id="success_mob">Успехи</h3>
       <div class="main__success__wrapper">
         <img
         ;
@@ -740,7 +696,7 @@ emailInput.addEventListener("input", function() {
         src="<%= require('../src/images/payments.svg') %>"
         alt="section__image"
       />
-      <p class="last__success__text">Собираем средства для разработки полномасштабного <br> проекта.</p>
+      <p class="last__success__text">Собираем средства для разработки полномасштабного проекта.</p>
       </div>
       <div class="main__last__wrapper">
         <p class="main__last__wrapper__text">Планируем…</p>
@@ -748,19 +704,24 @@ emailInput.addEventListener("input", function() {
       </div>
     
       <h3 class="main__text__reason ">Поддержать Fake Expose</h3>
-      <div class="main__donate__wrapper">
-      <div class="main__donate__paypal__wrapper">
-        <img
-        ;
-        class="main__donate__paypal__image"
-        src="<%= require('../src/images/paypal.svg') %>"
-        alt="paypal__image"
-      />
-      <p class="main__donate__paypal__text">Paypal</p>
-      <input class="main__donate__input" minlength="2"
-      maxlength="6" type="number" placeholder="Введите сумму">
-      <button class="main__button__donate">Поддержать</button>
-      </div>
+
+        <form class="" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <div class="main__donate__paypal__wrapper">
+          <input type="hidden" name="cmd" value="_donations">
+
+          <input type="hidden" name="business" value="asif.yagudaev@gmail.com">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="item_name" value="Support Project Fake Expose">
+          <input type="hidden" name="no_note" value="0">
+          
+          <img class="main__donate__paypal__image" src="<%= require('../src/images/paypal.svg') %>" alt="paypal__image">
+          <p class="main__donate__paypal__text">Paypal</p>
+          
+          <input class="main__donate__input" minlength="2" maxlength="6" type="number" name="amount" placeholder="Введите сумму">
+          <button class="main__button__donate" type="submit">Поддержать</button>
+        </div>
+        </form>
+  
       <div class="main__donate__coins__wrapper">
         <div class="main__donate__coin__wrapper">
           <img
@@ -916,7 +877,7 @@ emailInput.addEventListener("input", function() {
     </div>
     </section>
       </main>
-      <footer class="footer">
+      <footer class="footer__mobile" id="">
         <div class="footer__subwrapper">
         <h4 class="footer__title">Помочь  руками</h4>
         <div class="footer__wrapper">
@@ -947,24 +908,6 @@ emailInput.addEventListener("input", function() {
           </div>
         </div>
       </div>
-          <script>
-              const emailInput = document.getElementById("input_type_email");
-emailInput.addEventListener("input", function() {
-  this.value = this.value.trim().toLowerCase();
-  console.log(this.value)
-});
-
-            document.getElementById("volunteer").addEventListener("click", function(e) {
-              e.preventDefault();
-              document.getElementById("moderator").classList.remove("active__button");
-              this.classList.add("active__button");
-            });
-            document.getElementById("moderator").addEventListener("click", function(e) {
-              e.preventDefault();
-              document.getElementById("volunteer").classList.remove("active__button");
-              this.classList.add("active__button");
-            });
-          </script>
         
           <div class="footer__subwrapper">
 
@@ -1059,7 +1002,7 @@ emailInput.addEventListener("input", function() {
         </div>
       </div>
       </div>
-      </footer>
+    </footer>
     </div>
   </body>
 </html>
