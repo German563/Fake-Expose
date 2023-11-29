@@ -10,6 +10,10 @@ body {
   width: auto;
   background-color: #1F2021;
 }
+button:hover {
+  opacity: 0.3;
+
+}
 h1 {
   font-family: Inter;
 font-size: 16px;
@@ -40,24 +44,14 @@ margin-top: 0;
 .page__mobile {
   display: none;
 }
-/* .ellipse {
-  z-index: -1;
-  margin: 1rem auto;
-  position: absolute;
-  left: -700px;
-  top: 300px;
-  transform: rotate(90deg);
-  width: 2442px;
-  height: 1046px;
-  border-radius: 2442px;
-border: 200px solid var(--yellow-color-area, #E5BF00);
-filter: blur(100px);
-} */
+.main__donate__coin__icon__qr {
+  display: none;
+}
+
 .header {
   margin-top: 8px;
-  min-width: 840px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
   flex-wrap: wrap;
@@ -66,6 +60,7 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 24px;
+width: auto;
 }
 
  .header__item {
@@ -140,7 +135,7 @@ line-height: 24px;
   padding-left: 12px;
 }
 .main {
- width: 360px;
+ margin: 0 auto;
 }
 .section__image_06 {
   display: block;
@@ -211,14 +206,13 @@ line-height: 24px;
 .section__background {
   position: absolute;
   display: block;
-  margin-left: 244px;
   width: 1366px;
   z-index: -1;
 }
 .main__text {
   display: flex;
   flex-direction: column;
-  align-content: center;
+align-content: flex-start;
   flex-wrap: wrap;
   min-width: 1080px;
 }
@@ -535,7 +529,7 @@ line-height: 36px;
 }
 .main__donate__paypal__wrapper {
   display: flex;
-width: 216px;
+width: 230px;
 padding: 16px 24px 24px 24px;
 flex-direction: column;
 align-items: center;
@@ -626,6 +620,9 @@ margin-left: 24px;
   height: 24px;
   background-color: #333;
 }
+.main__donate__coin__icon:hover {
+  cursor: pointer;
+}
 .icon__button {
   background-color: #333;
   border: none;
@@ -658,11 +655,12 @@ width: 396px;
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   min-width: 1080px;
   gap: 24px;
   margin-bottom: 192px;
+  margin-left: -10px;
 }
 .footer__mobile {
   display: none;
@@ -803,15 +801,16 @@ gap: 4px;
 }
 .header {
   flex-direction: column-reverse;
+  min-width: none;
 }
 .header__wrapper {
   margin: 0;
   padding: 0;
 }
 .page__mobile {
+  overflow: hidden;
   width: 360px;
   display: flex;
-  margin: 0 auto;
   font-size: 24px;
   line-height: 1.2em;
   min-height: 100vh;
@@ -865,6 +864,7 @@ gap: 4px;
     align-content: flex-start;
     margin-left: 16px;
     min-width: none;
+    max-width: 360px;
   }
   .main__text__header {
     color: var(--Gray-5, #E0E0E0);
@@ -1057,6 +1057,7 @@ margin-bottom: 32px;
   width: 278px;
   margin-top: 8px;
   margin-left: 0;
+  margin-bottom: 64px;
 }
 .carousel__header__wrapper {
   margin-bottom: 0;
@@ -1095,11 +1096,11 @@ overflow-wrap: break-word;
 .footer__mobile {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-content: flex-start;
   justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
-  margin-left: 45px;
+
 }
 .footer__form__wrapper{
   width: 296px;
@@ -1144,6 +1145,9 @@ margin-top: 0;
 }
 .footer__button__wrapper {
   padding: 4px 16px;
+}
+.footer__form__wrapper  {
+  margin-left: 0;
 }
 .main__donate__paypal__wrapper {
   width: 278px;

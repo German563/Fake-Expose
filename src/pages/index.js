@@ -54,5 +54,3 @@ document.querySelectorAll(".footer__button__option").forEach(function(button) {
       this.classList.add("active__button");
     });
   });
-
-        

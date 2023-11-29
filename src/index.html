@@ -233,21 +233,19 @@
         />
         <div class="main__coin__text">
           <p class="main__coin__title">Bitcoin</p>
-          <p class="main__coin__address">1Np1n7mGgdjjtbwuMNVjpc98jUo6EdS3FH</p>
+          <p class="main__coin__address" id="bitcoinAddress">1Np1n7mGgdjjtbwuMNVjpc98jUo6EdS3FH</p>
         </div>
         <div class="main__coin__buttons__wrapper">
+          <button class="icon__button" onclick="copyToClipboard('bitcoinAddress')">
+            <img class="main__donate__coin__icon" src="<%= require('../src/images/content_copy.svg') %>" alt="copy__image">
+          </button>
           <button class="icon__button">
-            <img
-            ;
-            class="main__donate__coin__icon"
-            src="<%= require('../src/images/content_copy.svg') %>"
-            alt="copy__image"
-          />
+            <img class="main__donate__coin__icon__qr" src="<%= require('../src/images/qr_code.svg') %>" alt="qr__image">
           </button>
           <button class="icon__button">
             <img
             ;
-            class="main__donate__coin__icon"
+            class="main__donate__coin__icon__qr"
             src="<%= require('../src/images/qr_code.svg') %>"
             alt="qr__image"
           />
@@ -263,10 +261,10 @@
         />
         <div class="main__coin__text">
           <p class="main__coin__title">Ethereum</p>
-          <p class="main__coin__address">0xAe57ae6F95FC9C10ACa733523a4de85e22C278aA</p>
+          <p class="main__coin__address" id="EthereumAddress">0xAe57ae6F95FC9C10ACa733523a4de85e22C278aA</p>
         </div>
         <div class="main__coin__buttons__wrapper">
-          <button class="icon__button">
+          <button class="icon__button" onclick="copyToClipboard('EthereumAddress')">
             <img
             ;
             class="main__donate__coin__icon"
@@ -277,7 +275,7 @@
           <button class="icon__button">
             <img
             ;
-            class="main__donate__coin__icon"
+            class="main__donate__coin__icon__qr"
             src="<%= require('../src/images/qr_code.svg') %>"
             alt="qr__image"
           />
@@ -293,10 +291,10 @@
         />
         <div class="main__coin__text">
           <p class="main__coin__title">Tether USDT (ERC-20)</p>
-          <p class="main__coin__address">1Np1n7mGgdjjtbwuMNVjpc98jUo6EdS3FH</p>
+          <p class="main__coin__address" id="TetherAddress">1Np1n7mGgdjjtbwuMNVjpc98jUo6EdS3FH</p>
         </div>
         <div class="main__coin__buttons__wrapper">
-          <button class="icon__button">
+          <button class="icon__button" onclick="copyToClipboard('TetherAddress')">
             <img
             ;
             class="main__donate__coin__icon"
@@ -307,7 +305,7 @@
           <button class="icon__button">
             <img
             ;
-            class="main__donate__coin__icon"
+            class="main__donate__coin__icon__qr"
             src="<%= require('../src/images/qr_code.svg') %>"
             alt="qr__image"
           />
@@ -326,7 +324,7 @@
           <p class="main__coin__address">1Np1n7mGgdjjtbwuMNVjpc98jUo6EdS3FH</p>
         </div>
         <div class="main__coin__buttons__wrapper">
-          <button class="icon__button">
+          <button class="icon__button" onclick="copyToClipboard('TetherAddress')">
             <img
             ;
             class="main__donate__coin__icon"
@@ -337,7 +335,7 @@
           <button class="icon__button">
             <img
             ;
-            class="main__donate__coin__icon"
+            class="main__donate__coin__icon__qr"
             src="<%= require('../src/images/qr_code.svg') %>"
             alt="qr__image"
           />
@@ -353,10 +351,10 @@
         />
         <div class="main__coin__text">
           <p class="main__coin__title">Tether USDT (TRC-20)</p>
-          <p class="main__coin__address">TNZi1rFtF9uXG79etv9aS28o3yNoD1vthP</p>
+          <p class="main__coin__address" id="TetherUSDTAddress">TNZi1rFtF9uXG79etv9aS28o3yNoD1vthP</p>
         </div>
         <div class="main__coin__buttons__wrapper">
-          <button class="icon__button">
+          <button class="icon__button" onclick="copyToClipboard('TetherUSDTAddress')">
             <img
             ;
             class="main__donate__coin__icon"
@@ -367,7 +365,7 @@
           <button class="icon__button">
             <img
             ;
-            class="main__donate__coin__icon"
+            class="main__donate__coin__icon__qr"
             src="<%= require('../src/images/qr_code.svg') %>"
             alt="qr__image"
           />
@@ -732,10 +730,10 @@
         />
         <div class="main__coin__text">
           <p class="main__coin__title">Bitcoin</p>
-          <p class="main__coin__address">1Np1n7mGgdjjtbwuMNVjpc98jUo6EdS3FH</p>
+          <p class="main__coin__address" >1Np1n7mGgdjjtbwuMNVjpc98jUo6EdS3FH</p>
         </div>
         <div class="main__coin__buttons__wrapper">
-          <button class="icon__button">
+          <button class="icon__button" onclick="copyToClipboard('bitcoinAddress')">
             <img
             ;
             class="main__donate__coin__icon"
@@ -746,7 +744,7 @@
           <button class="icon__button">
             <img
             ;
-            class="main__donate__coin__icon"
+            class="main__donate__coin__icon__qr"
             src="<%= require('../src/images/qr_code.svg') %>"
             alt="qr__image"
           />
@@ -765,7 +763,7 @@
           <p class="main__coin__address">0xAe57ae6F95FC9C10ACa733523a4de85e22C278aA</p>
         </div>
         <div class="main__coin__buttons__wrapper">
-          <button class="icon__button">
+          <button class="icon__button" onclick="copyToClipboard('EthereumAddress')">
             <img
             ;
             class="main__donate__coin__icon"
@@ -776,7 +774,7 @@
           <button class="icon__button">
             <img
             ;
-            class="main__donate__coin__icon"
+            class="main__donate__coin__icon__qr"
             src="<%= require('../src/images/qr_code.svg') %>"
             alt="qr__image"
           />
@@ -795,7 +793,7 @@
           <p class="main__coin__address">1Np1n7mGgdjjtbwuMNVjpc98jUo6EdS3FH</p>
         </div>
         <div class="main__coin__buttons__wrapper">
-          <button class="icon__button">
+          <button class="icon__button" onclick="copyToClipboard('TetherAddress')">
             <img
             ;
             class="main__donate__coin__icon"
@@ -806,7 +804,7 @@
           <button class="icon__button">
             <img
             ;
-            class="main__donate__coin__icon"
+            class="main__donate__coin__icon__qr"
             src="<%= require('../src/images/qr_code.svg') %>"
             alt="qr__image"
           />
@@ -825,7 +823,7 @@
           <p class="main__coin__address">1Np1n7mGgdjjtbwuMNVjpc98jUo6EdS3FH</p>
         </div>
         <div class="main__coin__buttons__wrapper">
-          <button class="icon__button">
+          <button class="icon__button" onclick="copyToClipboard('TetherAddress')">
             <img
             ;
             class="main__donate__coin__icon"
@@ -836,7 +834,7 @@
           <button class="icon__button">
             <img
             ;
-            class="main__donate__coin__icon"
+            class="main__donate__coin__icon__qr"
             src="<%= require('../src/images/qr_code.svg') %>"
             alt="qr__image"
           />
@@ -855,7 +853,7 @@
           <p class="main__coin__address">TNZi1rFtF9uXG79etv9aS28o3yNoD1vthP</p>
         </div>
         <div class="main__coin__buttons__wrapper">
-          <button class="icon__button">
+          <button class="icon__button" onclick="copyToClipboard('TetherUSDTAddress')">
             <img
             ;
             class="main__donate__coin__icon"
@@ -866,7 +864,7 @@
           <button class="icon__button">
             <img
             ;
-            class="main__donate__coin__icon"
+            class="main__donate__coin__icon__qr"
             src="<%= require('../src/images/qr_code.svg') %>"
             alt="qr__image"
           />
@@ -1005,4 +1003,19 @@
     </footer>
     </div>
   </body>
+  <script>
+    const copyToClipboard = (elementId) => {
+      const textToCopy = document.getElementById(elementId).innerText;
+  
+      const tempInput = document.createElement("textarea");
+      tempInput.value = textToCopy;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+  
+      alert("Text copied to clipboard: " + textToCopy);
+    };
+  
+  </script>
 </html>
