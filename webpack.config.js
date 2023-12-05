@@ -8,7 +8,6 @@ module.exports = {
   entry: {
     main: "./src/pages/index.js"
   },
-
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
@@ -28,17 +27,21 @@ module.exports = {
       {
         test: /\.js$/,
         loader: "babel-loader",
-        exclude: "/node_modules/"
+        exclude: "/node_modules/",
+        options: {
+          presets: ["@babel/preset-env"],
+          plugins: ["@babel/plugin-proposal-class-properties"]
+        }
       },
       {
-    test: /\.css$/,
+        test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
             options: {
-             importLoaders: 1
-             }
+              importLoaders: 1
+            }
           },
           "postcss-loader"
         ],
@@ -50,10 +53,12 @@ module.exports = {
     ]
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: "styles.css"
+    }),
     new HtmlWebpackPlugin({
       template: "./src/index.html"
     }),
-    new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin()
+    new CleanWebpackPlugin()
   ],
-}
+};

@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" type="image/x-icon" href="../src/favicon.ico" />
     <title>Fake Expose</title>
   </head>
 
   <body>
+<div class="glow"></div>
     <div class="page">
-      <div class="ellipse"></div>
       <Header class="header">
         <h1>Fake Expose</h1>
         <ul class="header__wrapper">
@@ -20,8 +20,8 @@
             <li ><a class="header__item" href="#success">Успехи</a></li>
         </ul>
         <div class="header__button__wrapper">
-            <button class="header__button__donate">Поддержать</button>
-            <div class="header__button__language">
+            <a href="#paypal" class="header__button__donate">Поддержать</a>
+            <!-- <div class="header__button__language">
               <button class="dropbtn"> <p>EN</p>  <img
                 ;
                 class="button__arrow"
@@ -32,7 +32,7 @@
               <div class="dropdown-content">
                 <a class="header__language" href="#">RU</a>
               </div>
-        </div>
+        </div> -->
     </Header>
       <main class="main">
         <div class="section__background">
@@ -207,7 +207,7 @@
     
       <h3 class="main__text__reason ">Поддержать Fake Expose</h3>
       <div class="main__donate__wrapper">
-        <div class="main__donate__paypal__wrapper">
+        <div class="main__donate__paypal__wrapper" id="paypal">
           <img class="main__donate__paypal__image" src="<%= require('../src/images/paypal.svg') %>" alt="paypal__image">
             <p class="main__donate__paypal__text">Paypal</p>
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -242,14 +242,7 @@
           <button class="icon__button">
             <img class="main__donate__coin__icon__qr" src="<%= require('../src/images/qr_code.svg') %>" alt="qr__image">
           </button>
-          <button class="icon__button">
-            <img
-            ;
-            class="main__donate__coin__icon__qr"
-            src="<%= require('../src/images/qr_code.svg') %>"
-            alt="qr__image"
-          />
-          </button>
+
         </div>
         </div>
         <div class="main__donate__coin__wrapper">
@@ -272,14 +265,7 @@
             alt="copy__image"
           />
           </button>
-          <button class="icon__button">
-            <img
-            ;
-            class="main__donate__coin__icon__qr"
-            src="<%= require('../src/images/qr_code.svg') %>"
-            alt="qr__image"
-          />
-          </button>
+
         </div>
         </div>
         <div class="main__donate__coin__wrapper">
@@ -302,14 +288,7 @@
             alt="copy__image"
           />
           </button>
-          <button class="icon__button">
-            <img
-            ;
-            class="main__donate__coin__icon__qr"
-            src="<%= require('../src/images/qr_code.svg') %>"
-            alt="qr__image"
-          />
-          </button>
+
         </div>
         </div>
         <div class="main__donate__coin__wrapper">
@@ -332,14 +311,7 @@
             alt="copy__image"
           />
           </button>
-          <button class="icon__button">
-            <img
-            ;
-            class="main__donate__coin__icon__qr"
-            src="<%= require('../src/images/qr_code.svg') %>"
-            alt="qr__image"
-          />
-          </button>
+
         </div>
         </div>
         <div class="main__donate__coin__wrapper">
@@ -362,14 +334,7 @@
             alt="copy__image"
           />
           </button>
-          <button class="icon__button">
-            <img
-            ;
-            class="main__donate__coin__icon__qr"
-            src="<%= require('../src/images/qr_code.svg') %>"
-            alt="qr__image"
-          />
-          </button>
+
         </div>
         </div>
       </div>
@@ -517,7 +482,7 @@
           <h1>Fake Expose</h1>
             <button class="header__button__donate">Поддержать</button>
             
-            <div class="header__button__language">
+            <!-- <div class="header__button__language">
               <button class="dropbtn"> <p>EN</p>  <img
                 ;
                 class="button__arrow"
@@ -528,7 +493,7 @@
               <div class="dropdown-content">
                 <a class="header__language" href="#">RU</a>
               </div>
-        </div>
+        </div> -->
     </Header>
       <main class="main">
         <div class="section__background">
@@ -741,14 +706,7 @@
             alt="copy__image"
           />
           </button>
-          <button class="icon__button">
-            <img
-            ;
-            class="main__donate__coin__icon__qr"
-            src="<%= require('../src/images/qr_code.svg') %>"
-            alt="qr__image"
-          />
-          </button>
+
         </div>
         </div>
         <div class="main__donate__coin__wrapper">
@@ -771,14 +729,7 @@
             alt="copy__image"
           />
           </button>
-          <button class="icon__button">
-            <img
-            ;
-            class="main__donate__coin__icon__qr"
-            src="<%= require('../src/images/qr_code.svg') %>"
-            alt="qr__image"
-          />
-          </button>
+
         </div>
         </div>
         <div class="main__donate__coin__wrapper">
@@ -801,14 +752,7 @@
             alt="copy__image"
           />
           </button>
-          <button class="icon__button">
-            <img
-            ;
-            class="main__donate__coin__icon__qr"
-            src="<%= require('../src/images/qr_code.svg') %>"
-            alt="qr__image"
-          />
-          </button>
+
         </div>
         </div>
         <div class="main__donate__coin__wrapper">
@@ -831,14 +775,7 @@
             alt="copy__image"
           />
           </button>
-          <button class="icon__button">
-            <img
-            ;
-            class="main__donate__coin__icon__qr"
-            src="<%= require('../src/images/qr_code.svg') %>"
-            alt="qr__image"
-          />
-          </button>
+
         </div>
         </div>
         <div class="main__donate__coin__wrapper">
@@ -861,14 +798,7 @@
             alt="copy__image"
           />
           </button>
-          <button class="icon__button">
-            <img
-            ;
-            class="main__donate__coin__icon__qr"
-            src="<%= require('../src/images/qr_code.svg') %>"
-            alt="qr__image"
-          />
-          </button>
+
         </div>
         </div>
       </div>
@@ -1001,6 +931,7 @@
       </div>
       </div>
     </footer>
+    <div class="glow"></div>
     </div>
   </body>
   <script>
