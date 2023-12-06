@@ -105,7 +105,7 @@ line-height: 24px;
   background: var(--yellow-color-area, #E5BF00);
   width: 123px;
   height: 32px;
-  cursor: crosshair;
+  cursor: pointer;
 }
 .dropbtn {
   display: flex;
@@ -670,6 +670,7 @@ flex-direction: column;
 width: 396px;
 }
 .footer {
+  display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: center;
@@ -677,9 +678,6 @@ width: 396px;
   gap: 38px;
   margin-left: -10px;
   width: 100%;
-}
-.footer__mobile {
-  display: none;
 }
 .footer__buttons__wrapper {
 height: 32px;
@@ -710,7 +708,6 @@ line-height: 29px;
 .footer__subwrapper {
   display: flex;
   flex-direction: column;
-  width: 400px;
 }
 .footer__form__wrapper {
   margin-top: 16px;
@@ -1075,7 +1072,6 @@ margin-bottom: 32px;
   margin-bottom: 96px;
 }
 .main__last__wrapper {
-  display: none;
   margin-left: 66px;
 }
 .main__donate__wrapper {
@@ -1123,13 +1119,12 @@ overflow-wrap: break-word;
   margin-left: 12px;
 }
 .footer__mobile {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
-  margin-left: 55px;
 }
 .footer__form__wrapper{
   width: 296px;
